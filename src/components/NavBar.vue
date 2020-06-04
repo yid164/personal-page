@@ -1,22 +1,21 @@
 <template>
     <nav>
-        <v-app-bar color="black" dark app>
-            <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-            <v-spacer></v-spacer>
-            <span>
-                <v-toolbar-title class="font-weight-black">
-                    WELCOME TO MY WEBSITE
-                </v-toolbar-title>
-            </span>
-
-
+        <v-app-bar
+                class="transparent"
+                dark
+                app>
+            <v-app-bar-nav-icon @click="drawer = !drawer" class="black"></v-app-bar-nav-icon>
+            <v-toolbar-title class="black--text carousel-transition-enter">Welcome to Ken's Web</v-toolbar-title>
         </v-app-bar>
-        <v-navigation-drawer v-model="drawer" color="black" dark app>
+        <v-navigation-drawer
+                v-model="drawer"
+                class="transparent"
+                app>
             <v-list>
                 <v-col>
-                    <v-list-item>
+                    <v-list-item class="black--text">
                         <v-list-item-avatar color="red">
-                            <span class="white--text headline">KD</span>
+                            <span class="black--text headline">KD</span>
                         </v-list-item-avatar>
                         <v-list-item-content class="px-0">
                             <v-list-item-title class="title">
@@ -25,7 +24,7 @@
                         </v-list-item-content>
                     </v-list-item>
 
-                    <v-divider></v-divider>
+                    <v-spacer></v-spacer>
 
                     <v-list-item-group>
                         <v-list-item
@@ -94,5 +93,10 @@
 </script>
 
 <style scoped>
+    .transparent {
+        background-color: white!important;
+        opacity: 0.65;
+        border-color: transparent!important;
+    }
 
 </style>

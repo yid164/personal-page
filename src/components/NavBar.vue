@@ -5,7 +5,7 @@
                 dark
                 app>
             <v-app-bar-nav-icon @click="drawer = !drawer" class="black"></v-app-bar-nav-icon>
-            <v-toolbar-title class="black--text carousel-transition-enter">Welcome to Ken's Web</v-toolbar-title>
+            <v-toolbar-title class="black--text carousel-transition-enter">Ken's Page</v-toolbar-title>
         </v-app-bar>
         <v-navigation-drawer
                 v-model="drawer"
